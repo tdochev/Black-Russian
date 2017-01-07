@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using InsuranceApp.InsuranceObject;
-
-namespace InsuranceApp.FinancialInfo
+﻿namespace InsuranceApp.FinancialInfo
 {
+    using System;
+    using InsuranceApp.InsuranceObject;
     class BankAccount:Root
     {
-
+        //Manages bank account information
+        //Consists information about bank, account owner, account IBAN
         public HumanEntity AccountOwner { get; set; }
         public Bank BankOrg { get; set; }
         public string IBAN

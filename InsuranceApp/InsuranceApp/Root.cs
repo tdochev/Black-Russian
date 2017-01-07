@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InsuranceApp
+﻿namespace InsuranceApp
 {
+    using System;
+
     public abstract class Root
     {
         protected DateTime creationDate;

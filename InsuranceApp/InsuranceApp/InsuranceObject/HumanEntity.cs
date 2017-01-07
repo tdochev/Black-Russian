@@ -5,6 +5,7 @@
 
     public class HumanEntity:InsuranceEntity
     {
+        //Manage person information
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }

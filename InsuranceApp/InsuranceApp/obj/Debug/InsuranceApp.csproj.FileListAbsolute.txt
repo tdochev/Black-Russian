@@ -1,0 +1,8 @@
+C:\Telerik Cources\OOP-Course\TeamWork\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.exe.config
+C:\Telerik Cources\OOP-Course\TeamWork\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.exe
+C:\Telerik Cources\OOP-Course\TeamWork\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.pdb
+C:\Telerik Cources\OOP-Course\TeamWork\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.exe
+C:\Telerik Cources\OOP-Course\TeamWork\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.pdb
+C:\Telerik Cources\OOP-Course\TeamWork\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.exe.CodeAnalysisLog.xml
+C:\Telerik Cources\OOP-Course\TeamWork\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.exe.lastcodeanalysissucceeded
+C:\Telerik Cources\OOP-Course\TeamWork\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.csprojResolveAssemblyReference.cache

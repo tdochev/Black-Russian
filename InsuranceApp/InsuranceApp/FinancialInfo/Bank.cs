@@ -1,14 +1,10 @@
-﻿using InsuranceApp.InsuranceObject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InsuranceApp.FinancialInfo
+﻿namespace InsuranceApp.FinancialInfo
 {
+    using System;
+
     public class Bank:Root
     {
+        //Consists information about bank - name, code
         public string BankName { get; set; }
         public string BICCode
         {

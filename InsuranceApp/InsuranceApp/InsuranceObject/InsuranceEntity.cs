@@ -1,12 +1,6 @@
-﻿
-namespace InsuranceApp.InsuranceObject
+﻿namespace InsuranceApp.InsuranceObject
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
+    //Root for all insurance types - has ID and a method to implement SetID - to put a code for ID generating
     public abstract class InsuranceEntity : Root
     {
         public string ID { get; protected set; }
