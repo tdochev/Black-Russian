@@ -51,6 +51,17 @@
     <Compile Include="InsuranceContract\Contract.cs" />
     <Compile Include="InsuranceContract\RiskCovered.cs" />
     <Compile Include="Entry.cs" />
+    <Compile Include="Objects\HumanEntities\HumanInsurance.cs" />
+    <Compile Include="Objects\NonHumanEntities\CarInsurance.cs" />
+    <Compile Include="Objects\NonHumanEntities\IGenerateUniqueID.cs" />
+    <Compile Include="Objects\NonHumanEntities\NonHumanObjectsOwner.cs" />
+    <Compile Include="Objects\NonHumanEntities\ObjectTypes.cs" />
+    <Compile Include="Objects\NonHumanEntities\PropertyInsurance.cs" />
+    <Compile Include="Objects\NonHumanEntities\UniqueIdentifier.cs" />
+    <Compile Include="Objects\Person.cs" />
+    <Compile Include="Objects\RiskTypes\CarRiskTypes.cs" />
+    <Compile Include="Objects\RiskTypes\HumanRisTypes.cs" />
+    <Compile Include="Objects\RiskTypes\PropertyRiskTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
