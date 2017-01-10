@@ -44,24 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enumerations\CarRiskType.cs" />
-    <Compile Include="Enumerations\HumanRiskType.cs" />
-    <Compile Include="Enumerations\PaymentType.cs" />
-    <Compile Include="Enumerations\PropertyRiskType.cs" />
     <Compile Include="FinancialInfo\Bank.cs" />
     <Compile Include="FinancialInfo\BankAccount.cs" />
     <Compile Include="FinancialInfo\Payment.cs" />
     <Compile Include="FinancialInfo\Premium.cs" />
     <Compile Include="InsuranceContract\Contract.cs" />
     <Compile Include="InsuranceContract\RiskCovered.cs" />
-    <Compile Include="InsuranceObject\Car.cs" />
-    <Compile Include="InsuranceObject\HumanEntity.cs" />
-    <Compile Include="InsuranceObject\InsuranceEntity.cs" />
-    <Compile Include="InsuranceObject\NonHuman.cs" />
-    <Compile Include="InsuranceObject\Property.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Entry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Root.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

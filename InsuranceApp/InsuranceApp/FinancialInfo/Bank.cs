@@ -2,10 +2,11 @@
 {
     using System;
 
-    public class Bank:Root
+    public struct Bank 
     {
         //Consists information about bank - name, code
         public string BankName { get; set; }
+
         public string BICCode
         {
             get
@@ -25,6 +26,7 @@
                 BICCode = value.ToUpper();
             }
         }
+
         public Bank(string bank, string bicCode)
         {
             this.BankName = bank;
