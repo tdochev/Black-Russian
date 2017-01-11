@@ -14,7 +14,7 @@ namespace InsuranceApp.Engine
 
 		private InsuranceEngine()
 		{
-			this.logger = new ConsoleLogger();
+			this.logger = ConsoleLogger.Instance();
 		}
 	}
 }
