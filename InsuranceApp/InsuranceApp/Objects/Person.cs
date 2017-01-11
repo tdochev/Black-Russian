@@ -6,7 +6,9 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    public abstract class Person
+	using InsuranceApp.Contracts;
+
+	public abstract class Person : IPerson
     {
         private string firstName;
         private string middleName;
@@ -18,7 +20,7 @@
         public string FirstName
         {
             get
-            {
+            { 
                 return this.firstName;
             }
             private set
