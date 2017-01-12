@@ -1,4 +1,4 @@
-﻿namespace InsuranceApp.Objects.NonHumanEntities
+﻿namespace InsuranceApp.Models.NonHumanEntities
 {
     using System;
     using System.Collections.Generic;

@@ -1,6 +1,8 @@
 ﻿namespace InsuranceApp.FinancialInfo
 {
-    using InsuranceObject;
+    using Contracts;
+    using Models;
+
     using System;
     //Manage payments
     //Consists information for payer, date of payment, amount of payment and premium for which the payment is done
@@ -17,9 +19,9 @@
             get { return msg; }
         }
     }
-    public abstract class Payment:Root
+    public abstract class Payment
     {
-        private HumanEntity payer;
+        private IOwner payer;
         private decimal amount;
         private Premium forPremium;
         private bool received;
@@ -27,12 +29,12 @@
         public event EventHandler RaiseReceivePayment; //Add event for received payment, add premium id in the message
         protected abstract void OnPaid(CustomEventArgs e);
     }
-    public class BankPayment : Payment
-    {
-        //Add bank account, constructor, implement abstract method, raise event for received payment
-    }
-    public class CashPayment : Payment
-    {
-        //Add constructor, implement abstract method, raise event for received payment
-    }
+    //public class BankPayment : Payment
+    //{
+    //    //Add bank account, constructor, implement abstract method, raise event for received payment
+    //}
+    //public class CashPayment : Payment
+    //{
+    //    //Add constructor, implement abstract method, raise event for received payment
+    //}
 }

@@ -1,15 +1,17 @@
-﻿namespace InsuranceApp.Objects.NonHumanEntities
+﻿namespace InsuranceApp.Models.NonHumanEntities
 {
     using System;
+    using Enums;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Contracts;
 
     public class PropertyInsurance
     {
         private string propertyAddress;
-        private NonHumanObjectsOwner propertyOwner;
+        private IOwner propertyOwner;
 
         protected ObjectTypes Type { get; private set; }
 
@@ -29,7 +31,7 @@
             }
         }
 
-        public PropertyInsurance(string propertyAddress, NonHumanObjectsOwner propertyOwner)
+        public PropertyInsurance(string propertyAddress, IOwner propertyOwner)
         {
             this.PropertyAddress = propertyAddress;
             this.propertyOwner = propertyOwner;

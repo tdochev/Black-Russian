@@ -44,40 +44,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\PaymentType.cs" />
     <Compile Include="FinancialInfo\Bank.cs" />
     <Compile Include="FinancialInfo\BankAccount.cs" />
     <Compile Include="FinancialInfo\Payment.cs" />
     <Compile Include="FinancialInfo\Premium.cs" />
-    <Compile Include="InsuranceContract\Contract.cs" />
-    <Compile Include="InsuranceContract\RiskCovered.cs" />
+    <Compile Include="InsurancePolicy\Policy.cs" />
+    <Compile Include="InsurancePolicy\RiskCovered.cs" />
     <Compile Include="Entry.cs" />
-    <Compile Include="Objects\HumanEntities\HumanInsurance.cs" />
-    <Compile Include="Objects\NonHumanEntities\CarInsurance.cs" />
-    <Compile Include="Objects\NonHumanEntities\IGenerateUniqueID.cs" />
-    <Compile Include="Objects\NonHumanEntities\NonHumanObjectsOwner.cs" />
-    <Compile Include="Objects\NonHumanEntities\ObjectTypes.cs" />
-    <Compile Include="Objects\NonHumanEntities\PropertyInsurance.cs" />
-    <Compile Include="Objects\NonHumanEntities\UniqueIdentifier.cs" />
-    <Compile Include="Objects\Person.cs" />
-    <Compile Include="Objects\RiskTypes\CarRiskTypes.cs" />
-    <Compile Include="Objects\RiskTypes\HumanRisTypes.cs" />
-    <Compile Include="Objects\RiskTypes\PropertyRiskTypes.cs" />
+    <Compile Include="Models\NonHumanEntities\CarInsurance.cs" />
+    <Compile Include="Contracts\IGenerateUniqueID.cs" />
+    <Compile Include="Models\NonHumanEntities\NonHumanObjectsOwner.cs" />
+    <Compile Include="Enums\ObjectTypes.cs" />
+    <Compile Include="Models\NonHumanEntities\PropertyInsurance.cs" />
+    <Compile Include="Models\NonHumanEntities\UniqueIdentifier.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Enums\RiskTypes\CarRiskTypes.cs" />
+    <Compile Include="Enums\RiskTypes\HumanRiskTypes.cs" />
+    <Compile Include="Enums\RiskTypes\PropertyRiskTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Engine\Contracts\ILogger.cs" />
     <Compile Include="Engine\Models\ConsoleLogger.cs" />
     <Compile Include="Engine\InsuranceEngine.cs" />
-    <Compile Include="Contracts\IPerson.cs" />
+    <Compile Include="Contracts\IOwner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Folder Include="Engine\" />
-    <Folder Include="Engine\Contracts\" />
-    <Folder Include="Engine\Models\" />
-    <Folder Include="Contracts\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

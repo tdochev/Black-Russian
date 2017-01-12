@@ -1,15 +1,13 @@
-﻿namespace InsuranceApp.Objects.NonHumanEntities
+﻿namespace InsuranceApp.Models.NonHumanEntities
 {
+    using Contracts;
+    using Enums;
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class CarInsurance : UniqueIdentifier, IGenerateUniqueID
     {
         private string vehicleRegistration;
-        private NonHumanObjectsOwner owner;
+        private IOwner owner;
 
         protected ObjectTypes Type { get; private set; }
 
@@ -35,7 +33,7 @@
             }
         }
 
-        public CarInsurance(string vehicleRegistration, NonHumanObjectsOwner vehicleOwner)
+        public CarInsurance(string vehicleRegistration, IOwner vehicleOwner)
         {
             this.Registration = vehicleRegistration;
             this.owner = vehicleOwner;

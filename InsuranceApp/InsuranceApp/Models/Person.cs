@@ -1,21 +1,17 @@
-﻿namespace InsuranceApp.Objects
+﻿namespace InsuranceApp.Models
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
 	using InsuranceApp.Contracts;
 
-	public abstract class Person : IPerson
+	public abstract class Person : IOwner
     {
         private string firstName;
         private string middleName;
         private string lastName;
-        private string personalID;
         private string address;
         private string phoneNumber;
+        private string iD;
 
         public string FirstName
         {
@@ -36,6 +32,19 @@
                     throw new NotImplementedException();
                 }
                 this.firstName = value;
+            }
+        }
+
+        public virtual string ID
+        {
+            get
+            {
+                return this.iD;
+            }
+            set
+            {
+                // TODO: Add basic validation
+                this.iD = value;
             }
         }
 
@@ -80,26 +89,6 @@
                     throw new NotImplementedException();
                 }
                 this.lastName = value;
-            }
-        }
-
-        public string PersonalID
-        {
-            get
-            {
-                return this.personalID;
-            }
-            private set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new NotImplementedException();
-                }
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new NotImplementedException();
-                }
-                this.personalID = value;
             }
         }
 
@@ -151,7 +140,7 @@
         public Person(string firstName, string lastName)
         {
             this.FirstName = firstName;
-            this.LastName = lastName;
+            this.LastName = lastName; 
         }
 
         /// <summary>
@@ -163,14 +152,12 @@
         /// <param name="address"></param>
         /// <param name="phoneNumber"></param>
         /// <param name="personalID"></param>
-        public Person(string firstName, string middleName, string lastName, string address, string phoneNumber, string personalID = "none")
+        public Person(string firstName, string middleName, string lastName, string address, string phoneNumber, string id) : this (firstName, lastName)
         {
-            this.FirstName = firstName;
-            this.MiddleName = middleName;
             this.LastName = lastName;
             this.Address = address;
             this.PhoneNumber = phoneNumber;
-            this.PersonalID = personalID;
+            this.iD = id;
         }
     }
 }

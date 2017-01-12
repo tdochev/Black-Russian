@@ -1,9 +1,9 @@
 ﻿namespace InsuranceApp.FinancialInfo
 {
-    using Enumerations;
+    using Enums;
     using System;
     using System.Collections.Generic;
-    public class Premium:Root
+    public class Premium
     {
         //Manage premiums
         //consists information about premiums done for the contract
@@ -20,6 +20,8 @@
         public List<Payment> Payments { get; set; } //list of payments for this premium (it could be paid by several payments)
         public PaymentType PaymentMode { get; set; } //could be by bank transfer or cash
         public decimal Amount { get; set; }
+
+        public string ID { get; set; }
 
         void Pay(object sender, CustomEventArgs e)
         {

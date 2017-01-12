@@ -1,4 +1,4 @@
-﻿namespace InsuranceApp.Objects.RiskTypes
+﻿namespace InsuranceApp.Enums
 {
     using System;
     using System.Collections.Generic;
@@ -6,11 +6,9 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    public enum PropertyRiskTypes
+    public enum ObjectTypes
     {
-        Fire,
-        Flood,
-        NaturalDisasters,
-        Full
+        Car = 10,
+        Property = 20
     }
 }

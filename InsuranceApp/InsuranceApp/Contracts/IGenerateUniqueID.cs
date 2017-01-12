@@ -1,4 +1,4 @@
-﻿namespace InsuranceApp.Objects.RiskTypes
+﻿namespace InsuranceApp.Models.NonHumanEntities
 {
     using System;
     using System.Collections.Generic;
@@ -6,10 +6,8 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    public enum CarRiskTypes
+    public interface IGenerateUniqueID
     {
-        Fire,
-        Accident,
-        Full
+        string GenerateUniqueNumber();
     }
 }

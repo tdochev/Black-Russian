@@ -2,7 +2,7 @@
 
 namespace InsuranceApp.Contracts
 {
-	public interface IPerson
+	public interface IOwner
 	{
 		string FirstName { get; }
 
@@ -10,7 +10,7 @@ namespace InsuranceApp.Contracts
 
 		string LastName { get; }
 
-		string PersonalID { get;  }
+		string ID { get;  }
 
 		string Address { get; }
 
