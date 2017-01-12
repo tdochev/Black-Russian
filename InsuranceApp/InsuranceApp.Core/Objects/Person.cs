@@ -10,18 +10,19 @@
 
     public abstract class Person : IPerson
     {
-        private string firstName;
-        private string middleName;
-        private string lastName;
-        private string personalID;
-        private string address;
-        private string phoneNumber;
         private const string firstNameString = "First Name";
         private const string middleNameString = "Midle Name";
         private const string lastNameString = "Last Name";
         private const string personalIDString = "Personal ID";
         private const string addressString = "Adress";
         private const string phoneNumberString = "Phone Number";
+
+        private string firstName;
+        private string middleName;
+        private string lastName;
+        private string personalID;
+        private string address;
+        private string phoneNumber;
 
         public string FirstName
         {

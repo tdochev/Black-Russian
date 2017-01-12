@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Verification.cs" />
     <Compile Include="Constants\BankConstants.cs" />
     <Compile Include="Contracts\IContractPayment.cs" />
     <Compile Include="Contracts\IPaymentOwner.cs" />
