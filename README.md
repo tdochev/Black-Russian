@@ -6,7 +6,7 @@ Telerik-CSharp-TeamWork
 # Task Separation
 
 Name | Task
------------
+-----|-----
 David | Objects, Financial Information
 Tsvetomir | Interfaces, UI
 Neven | Contracts
