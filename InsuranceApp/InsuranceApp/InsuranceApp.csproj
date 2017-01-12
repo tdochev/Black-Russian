@@ -44,30 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exceptions\InvalidIbanValidationExeption.cs" />
-    <Compile Include="FinancialInfo\Bank.cs" />
-    <Compile Include="FinancialInfo\BankAccount.cs" />
-    <Compile Include="FinancialInfo\Payment.cs" />
-    <Compile Include="FinancialInfo\Premium.cs" />
-    <Compile Include="InsuranceContract\Contract.cs" />
-    <Compile Include="InsuranceContract\RiskCovered.cs" />
-    <Compile Include="Entry.cs" />
-    <Compile Include="Objects\HumanEntities\HumanInsurance.cs" />
-    <Compile Include="Objects\NonHumanEntities\CarInsurance.cs" />
-    <Compile Include="Objects\NonHumanEntities\IGenerateUniqueID.cs" />
-    <Compile Include="Objects\NonHumanEntities\NonHumanObjectsOwner.cs" />
-    <Compile Include="Objects\NonHumanEntities\ObjectTypes.cs" />
-    <Compile Include="Objects\NonHumanEntities\PropertyInsurance.cs" />
-    <Compile Include="Objects\NonHumanEntities\UniqueIdentifier.cs" />
-    <Compile Include="Objects\Person.cs" />
-    <Compile Include="Objects\RiskTypes\CarRiskTypes.cs" />
-    <Compile Include="Objects\RiskTypes\HumanRisTypes.cs" />
-    <Compile Include="Objects\RiskTypes\PropertyRiskTypes.cs" />
+    <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Engine\Contracts\ILogger.cs" />
     <Compile Include="Engine\Models\ConsoleLogger.cs" />
     <Compile Include="Engine\InsuranceEngine.cs" />
-    <Compile Include="Contracts\IPerson.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
