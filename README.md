@@ -5,10 +5,12 @@ Telerik-CSharp-TeamWork
 
 # Task Separation
 
-Name | Task
------|-----
-David | Objects, Financial Information
-Tsvetomir | Interfaces, UI
-Neven | Contracts
-Georgy | Exceptions 
-Iva | Attributes  
+Task | Owner | Status
+-----|-------|-------
+Objects | Neven, David | Ready
+Financial Information | David | In Development
+Contracts | Neven | In Development
+UI | Tsvetomir | In Development
+Update Interfaces | Tsvetomir | In Development
+Exceptions | Georgy | In Development
+Attributes | Iva | In Development
