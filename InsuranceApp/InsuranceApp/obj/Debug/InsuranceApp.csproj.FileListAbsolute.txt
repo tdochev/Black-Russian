@@ -13,3 +13,4 @@ C:\Users\lubomird\Desktop\GitHub\TeamWorks\CSharp-OOP\Black-Russian\InsuranceApp
 C:\Users\BOSS\Documents\GitHub\Black-Russian\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.exe.config
 C:\Users\BOSS\Documents\GitHub\Black-Russian\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.exe
 C:\Users\BOSS\Documents\GitHub\Black-Russian\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.pdb
+C:\Users\BOSS\Documents\GitHub\Black-Russian\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.csprojResolveAssemblyReference.cache
