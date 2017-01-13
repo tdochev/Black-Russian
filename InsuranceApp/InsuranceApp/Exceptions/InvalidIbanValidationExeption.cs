@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class InvalidIbanValidationExeption : Exception
+    public class InvalidIbanValidationExeption : ApplicationException
     {
         public InvalidIbanValidationExeption()
         {

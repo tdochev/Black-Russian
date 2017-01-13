@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\InvalidIbanValidationExeption.cs" />
+    <Compile Include="Exceptions\RegistrationEmptyException.cs" />
+    <Compile Include="Exceptions\RegistrationLengthException.cs" />
     <Compile Include="FinancialInfo\Bank.cs" />
     <Compile Include="FinancialInfo\BankAccount.cs" />
     <Compile Include="FinancialInfo\Payment.cs" />

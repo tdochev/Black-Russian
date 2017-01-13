@@ -3,8 +3,9 @@
     using FinancialInfo;
     using InsuranceObject;
     using System.Collections.Generic;
-    public class Contract<T, S>:Root where T:RiskCovered
-                                     where S:InsuranceEntity
+    public class Contract<T, S>
+        where T:RiskCovered
+        where S:InsuranceEntity
         //The class describes insurance contract. The contract types depends on RisLCovered and InsuranceEntity - i.e
         //if you want to make a contract for car insurance T must be RiskCoveredCar, S:Car , etc
     {

@@ -4,7 +4,7 @@
     using InsuranceObject;
     using System;
 
-    public abstract class RiskCovered:Root
+    public abstract class RiskCovered
     {
         private decimal maxCoverageAmount; //maximum amount which could be received in case of 
                                            //claim covered by this risk

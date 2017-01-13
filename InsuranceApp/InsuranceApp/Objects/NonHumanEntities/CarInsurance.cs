@@ -1,6 +1,7 @@
 ﻿namespace InsuranceApp.Objects.NonHumanEntities
 {
     using System;
+    using Exceptions;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
@@ -23,14 +24,13 @@
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    // TODO: Warn that registration value cannot be left empty!
-                    throw new NotImplementedException();
+                    throw new RegistrationEmptyException("Registration value cannot stay null or empty");
                 }
                 if (value.Length < 8)
                 {
-                    // TODO: Warn the user that registration cannot be less then eight symbols
-                    throw new NotImplementedException();
+                    throw new RegistrationLengthException("Registration length cannot be less than 8");
                 }
+
                 this.vehicleRegistration = value;
             }
         }
