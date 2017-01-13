@@ -250,5 +250,7 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
-*bin/
-*obj/
+
+# Bin and Obj folders
+bin
+obj
