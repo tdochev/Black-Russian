@@ -3,13 +3,13 @@ using InsuranceApp.ConsoleClient.Engine.Models;
 
 namespace InsuranceApp.ConsoleClient.Engine
 {
-	public sealed class InsuranceEngine
+	public sealed class InsuranceEngine : IEngine
 	{
 		private const string EngineStrated = "Insurance engine successfully started!";
 
 		//TODO: Define Interface for the Engine
 
-		private static readonly InsuranceEngine SingleInstance = new InsuranceEngine();
+		private static readonly IEngine SingleInstance = new InsuranceEngine();
 
 		private readonly ILogger logger;
 
@@ -18,7 +18,7 @@ namespace InsuranceApp.ConsoleClient.Engine
 			this.logger = ConsoleLogger.Instance();
 		}
 
-		public static InsuranceEngine Instance
+		public static IEngine Instance
 		{
 			get
 			{
