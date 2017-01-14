@@ -1,7 +1,7 @@
 ﻿namespace InsuranceApp.Core.Objects.NonHumanEntities
 {
+    using Common;
     using System;
-    using Exceptions;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
@@ -11,6 +11,7 @@
     {
         private string vehicleRegistration;
         private NonHumanObjectsOwner owner;
+        private const string registraionString="Car Registraion";
 
         protected ObjectTypes Type { get; private set; }
 
@@ -22,15 +23,8 @@
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new RegistrationEmptyException("Registration value cannot stay null or empty");
-                }
-                if (value.Length < 8)
-                {
-                    throw new RegistrationLengthException("Registration length cannot be less than 8");
-                }
-
+                Verification.String(value, registraionString);
+                Verification.CarRegistration(value);
                 this.vehicleRegistration = value;
             }
         }

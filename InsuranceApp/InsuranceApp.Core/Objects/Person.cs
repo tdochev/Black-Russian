@@ -1,5 +1,6 @@
 ﻿namespace InsuranceApp.Core.Objects
 {
+    using Common;
     using Contracts;
     using System;
     using System.Collections.Generic;
@@ -9,6 +10,13 @@
 
     public abstract class Person : IPerson
     {
+        private const string firstNameString = "First Name";
+        private const string middleNameString = "Midle Name";
+        private const string lastNameString = "Last Name";
+        private const string personalIDString = "Personal ID";
+        private const string addressString = "Adress";
+        private const string phoneNumberString = "Phone Number";
+
         private string firstName;
         private string middleName;
         private string lastName;
@@ -24,17 +32,9 @@
             }
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    // TODO: Warn the user that value cannot be left empty
-                    throw new NotImplementedException();
-                }
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    // TODO: Warn the user that value cannot be Whitespace
-                    throw new NotImplementedException();
-                }
-                this.firstName = value;
+                Verification.String(value, firstNameString);
+                
+               this.firstName = value;
             }
         }
 
@@ -46,17 +46,9 @@
             }
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    // TODO: Warn the user that value cannot be left empty
-                    throw new NotImplementedException();
-                }
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    // TODO: Warn the user that value cannot be Whitespace
-                    throw new NotImplementedException();
-                }
-                this.middleName = value;
+
+                Verification.String(value, middleNameString);
+               this.middleName = value;
             }
         }
 
@@ -68,17 +60,8 @@
             }
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    // TODO: Warn the user that value cannot be left empty
-                    throw new NotImplementedException();
-                }
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    // TODO: Warn the user that value cannot be Whitespace
-                    throw new NotImplementedException();
-                }
-                this.lastName = value;
+                Verification.String(value, lastNameString);
+               this.lastName = value;
             }
         }
 
@@ -90,15 +73,10 @@
             }
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new NotImplementedException();
-                }
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new NotImplementedException();
-                }
-                this.personalID = value;
+                Verification.String(value, personalIDString);
+
+                Verification.PersonalID(value);
+               this.personalID = value;
             }
         }
 
@@ -110,15 +88,9 @@
             }
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new NotImplementedException();
-                }
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new NotImplementedException();
-                }
-                this.address = value;
+                Verification.String(value, addressString);
+
+               this.address = value;
             }
         }
 
@@ -130,15 +102,11 @@
             }
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new NotImplementedException();
-                }
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new NotImplementedException();
-                }
-                this.phoneNumber = value;
+                Verification.String(value, phoneNumberString);
+               
+                Verification.Phone(value);
+
+               this.phoneNumber = value;
             }
         }
 

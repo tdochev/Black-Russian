@@ -18,6 +18,7 @@
             }
             set
             {
+                //Verification ?
                 if (value.Length < 6)
                 {
                     throw new NotImplementedException();

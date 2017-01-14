@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Verification.cs" />
     <Compile Include="Constants\BankConstants.cs" />
     <Compile Include="Contracts\IContractPayment.cs" />
     <Compile Include="Contracts\IPaymentOwner.cs" />
@@ -56,7 +57,7 @@
     <Compile Include="Objects\NonHumanEntities\IGenerateUniqueID.cs" />
     <Compile Include="Objects\NonHumanEntities\NonHumanObjectsOwner.cs" />
     <Compile Include="Objects\NonHumanEntities\ObjectTypes.cs" />
-    <Compile Include="Objects\NonHumanEntities\PropertyInsurance.cs" />
+    <Compile Include="Objects\RiskTypes\PropertyInsurance.cs" />
     <Compile Include="Objects\NonHumanEntities\UniqueIdentifier.cs" />
     <Compile Include="Objects\Person.cs" />
     <Compile Include="Objects\RiskTypes\CarRiskTypes.cs" />
@@ -70,6 +71,6 @@
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
-  </Target> 
+  </Target>
   -->
 </Project>
