@@ -12,5 +12,6 @@ Financial Information | David | In Development
 Contracts | Neven | In Development
 UI | Tsvetomir | In Development
 Update Interfaces | Tsvetomir | In Development
-Exceptions | Georgy | In Development
+Exceptions | Georgy, Marin | In Development
 Attributes | Iva | In Development
+Validation | Marin | In Development
