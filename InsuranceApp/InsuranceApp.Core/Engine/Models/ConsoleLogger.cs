@@ -1,8 +1,8 @@
 ﻿using System;
 
-using InsuranceApp.ConsoleClient.Engine.Contracts;
+using InsuranceApp.Core.Engine.Contracts;
 
-namespace InsuranceApp.ConsoleClient.Engine.Models
+namespace InsuranceApp.Core.Engine.Models
 {
 	public sealed class ConsoleLogger : ILogger
 	{

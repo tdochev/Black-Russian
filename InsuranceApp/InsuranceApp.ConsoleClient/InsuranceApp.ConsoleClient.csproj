@@ -11,7 +11,7 @@
     <AssemblyName>InsuranceApp.ConsoleClient</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <StartupObject>StartUp</StartupObject>
+    <StartupObject>InsuranceApp.ConsoleClient.StartUp</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,11 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="StartUp.cs" />
-    <Compile Include="Engine\Contracts\ILogger.cs" />
-    <Compile Include="Engine\InsuranceEngine.cs" />
-    <Compile Include="Engine\Models\ConsoleLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Engine\Contracts\IEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\InsuranceApp.Core\InsuranceApp.Core.csproj">

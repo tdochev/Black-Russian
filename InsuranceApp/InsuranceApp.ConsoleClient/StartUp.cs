@@ -1,5 +1,6 @@
-﻿
-using InsuranceApp.ConsoleClient.Engine;
+﻿using InsuranceApp.Core.Engine;
+using InsuranceApp.Core.Engine.Contracts;
+using InsuranceApp.Core.Engine.Models;
 
 namespace InsuranceApp.ConsoleClient
 {
@@ -7,7 +8,8 @@ namespace InsuranceApp.ConsoleClient
     {
         public static void Main()
         {
-            InsuranceEngine.Instance.StartEngine();
+            ILogger logger = ConsoleLogger.Instance();
+            InsuranceEngine.GetInstance(logger).StartEngine();
         }
     }
 }

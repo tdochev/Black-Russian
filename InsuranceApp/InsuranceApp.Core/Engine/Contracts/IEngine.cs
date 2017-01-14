@@ -1,4 +1,4 @@
-﻿namespace InsuranceApp.ConsoleClient
+﻿namespace InsuranceApp.Core.Engine.Contracts
 {
 	public interface IEngine
 	{

@@ -1,4 +1,4 @@
-﻿namespace InsuranceApp.ConsoleClient.Engine.Contracts
+﻿namespace InsuranceApp.Core.Engine.Contracts
 {
 	public interface ILogger
 	{

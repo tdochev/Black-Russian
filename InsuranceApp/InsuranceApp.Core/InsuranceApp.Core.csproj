@@ -45,6 +45,10 @@
     <Compile Include="Contracts\IContractPayment.cs" />
     <Compile Include="Contracts\IPaymentOwner.cs" />
     <Compile Include="Contracts\IPerson.cs" />
+    <Compile Include="Engine\Contracts\IEngine.cs" />
+    <Compile Include="Engine\Contracts\ILogger.cs" />
+    <Compile Include="Engine\InsuranceEngine.cs" />
+    <Compile Include="Engine\Models\ConsoleLogger.cs" />
     <Compile Include="Exceptions\InvalidContractValidationException.cs" />
     <Compile Include="Exceptions\InvalidIbanValidationException.cs" />
     <Compile Include="Finance\Payments\ContractPayment.cs" />
