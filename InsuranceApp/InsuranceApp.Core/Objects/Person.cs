@@ -130,11 +130,9 @@
         /// <param name="address"></param>
         /// <param name="phoneNumber"></param>
         /// <param name="personalID"></param>
-        public Person(string firstName, string middleName, string lastName, string address, string phoneNumber, string personalID = "none")
+		public Person(string firstName, string middleName, string lastName, string address, string phoneNumber, string personalID = "none") : this(firstName, lastName)
         {
-            this.FirstName = firstName;
             this.MiddleName = middleName;
-            this.LastName = lastName;
             this.Address = address;
             this.PhoneNumber = phoneNumber;
             this.PersonalID = personalID;
