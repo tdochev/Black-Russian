@@ -1,5 +1,6 @@
 ﻿namespace InsuranceApp.Core.Objects.NonHumanEntities
 {
+    using Common;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -10,6 +11,7 @@
     {
         private string propertyAddress;
         private NonHumanObjectsOwner propertyOwner;
+        private const string propertyAddressString = "Property Adredress ";
 
         protected ObjectTypes Type { get; private set; }
 
@@ -21,10 +23,7 @@
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new NotFiniteNumberException();
-                }
+                Verification.String(value, propertyAddressString);
                 this.propertyAddress = value;
             }
         }
