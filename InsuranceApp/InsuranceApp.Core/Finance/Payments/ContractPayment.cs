@@ -1,6 +1,8 @@
 ﻿namespace InsuranceApp.Core.Finance.Payments
 {
+    using Common;
     using Contracts;
+    using Exceptions;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -12,7 +14,8 @@
         private string iban;
         private string contractId;
         private PaymentOwner owner;
-
+        private const string ibanString = "IBAN value";
+        private const string contacIDString = "IBAN value";
         public string Iban
         {
             get
@@ -22,18 +25,7 @@
 
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new InvalidIbanValidationException("IBAN value cannot be left empty!");
-                }
-                else if(string.IsNullOrWhiteSpace(value))
-                {
-                    throw new InvalidCastException("IBAN value cannot be set with White Space!");
-                }
-                else if(value.Length < 22)
-                {
-                    throw new InvalidIbanValidationException("Invalid IBAN. Value must be exactly 22 symbols.");
-                }
+                Verification.StringExcactLength(value, ibanString, 22);
                 this.iban = value;
             }
         }
@@ -47,14 +39,8 @@
 
             private set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new InvalidContractValidationException("Contract ID cannot be left empty!");
-                }
-                else if(string.IsNullOrWhiteSpace(value))
-                {
-                    throw new InvalidContractValidationException("Contract ID value cannot be set with White Space!");
-                }
+                Verification.String(value, contacIDString);
+                
                 //else if (!ContractsList.contracts.Contains(value))
                 //{
                 //    // TODO: After the Insurance Contracts are ready implement verification.
