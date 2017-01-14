@@ -16,6 +16,7 @@
         private const string personalIDString = "Personal ID";
         private const string addressString = "Adress";
         private const string phoneNumberString = "Phone Number";
+        private const string phoneNumberStringErr = "Phone Number is in invalid format ";
 
         private string firstName;
         private string middleName;
@@ -104,7 +105,7 @@
             {
                 Verification.String(value, phoneNumberString);
                
-                Verification.Phone(value);
+                Verification.Phone(value,phoneNumberStringErr);
 
                this.phoneNumber = value;
             }
@@ -130,9 +131,11 @@
         /// <param name="address"></param>
         /// <param name="phoneNumber"></param>
         /// <param name="personalID"></param>
-		public Person(string firstName, string middleName, string lastName, string address, string phoneNumber, string personalID = "none") : this(firstName, lastName)
+        public Person(string firstName, string middleName, string lastName, string address, string phoneNumber, string personalID = "none")
         {
+            this.FirstName = firstName;
             this.MiddleName = middleName;
+            this.LastName = lastName;
             this.Address = address;
             this.PhoneNumber = phoneNumber;
             this.PersonalID = personalID;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace InsuranceApp.Core.Common
@@ -34,9 +35,13 @@ namespace InsuranceApp.Core.Common
         }
 
 
-        internal static void Phone(string value)
+        internal static void Phone(string value,string phoneStr)
         {
-            throw new NotImplementedException();
+            Match match = Regex.Match(value, @"^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$", RegexOptions.IgnoreCase);
+            if (!match.Success)
+            {
+                throw new ArgumentException(phoneStr);
+            }
         }
 
         internal static void CarRegistration(string value)
