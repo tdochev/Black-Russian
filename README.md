@@ -15,5 +15,3 @@ Update Interfaces | Tsvetomir | In Development
 Exceptions | Georgy, Marin | In Development
 Attributes | Iva | In Development
 Validation | Marin | In Development
-
-Test Coommit From Neven Account
