@@ -48,6 +48,7 @@
     <Compile Include="Contracts\IPerson.cs" />
     <Compile Include="Engine\Contracts\IEngine.cs" />
     <Compile Include="Engine\Contracts\ILogger.cs" />
+    <Compile Include="Engine\Factories\HumanInsuranceFactory.cs" />
     <Compile Include="Engine\InsuranceEngine.cs" />
     <Compile Include="Engine\Models\ConsoleLogger.cs" />
     <Compile Include="Exceptions\InvalidContractValidationException.cs" />

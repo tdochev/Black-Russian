@@ -76,7 +76,7 @@
             {
                 Verification.String(value, personalIDString);
 
-                Verification.PersonalID(value);
+                //Verification.PersonalID(value);
                this.personalID = value;
             }
         }
