@@ -2,6 +2,7 @@
 {
     using Common;
     using Constants;
+    using Contracts;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -11,7 +12,7 @@
     public class CarInsurance : UniqueIdentifier, IGenerateUniqueID, IType
     {
         private string vehicleRegistration;
-        private NonHumanObjectsOwner owner;
+        private IPerson owner;
         private const string registraionString="Car Registraion";
 
         protected ObjectTypes Type { get; private set; }

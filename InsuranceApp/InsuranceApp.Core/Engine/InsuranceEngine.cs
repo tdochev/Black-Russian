@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using InsuranceApp.Core.Engine.Contracts;
 using InsuranceApp.Core.Engine.Factories;
 using InsuranceApp.Core.Contracts;
-
+using System.Linq;
+using InsuranceApp.InsuranceContract;
 
 namespace InsuranceApp.Core.Engine
 {
@@ -14,7 +15,7 @@ namespace InsuranceApp.Core.Engine
         private const string InvalidCommand = "Invalid command!";
 
         private HumanInsuranceFactory humanFactory;
-
+        private ContractFactory contractFactory;
 
         private static IEngine SingleInstance;
 
@@ -36,7 +37,10 @@ namespace InsuranceApp.Core.Engine
         }
         public void StartEngine()
         {
+            //implmement interfaces
             this.humanFactory = new HumanInsuranceFactory();
+            this.contractFactory = new ContractFactory();
+
             this.persons = new List<IPerson>();
 
             this.logger.Log(EngineStrated);
@@ -61,12 +65,27 @@ namespace InsuranceApp.Core.Engine
 
             switch (commandType)
             {
+                //TODO: move case contents to methods
                 case "create":
                     this.CreateObject(splittedCommand[1].ToLower());
                     break;
                 case "list":
                     this.ListObject(splittedCommand[1].ToLower());
                     break;
+                case "insure":
+                    var userId = splittedCommand[1];
+                    var currentUser = this.persons.FirstOrDefault(x => x.PersonalID == userId);
+                    decimal amount = 0m;
+                    try
+                    {
+                        amount = decimal.Parse(splittedCommand[3]);
+                    }
+                    catch (Exception)
+                    {
+                        this.logger.Log("Invalid contract amount!");
+                    }
+                    this.CreateContract(currentUser, splittedCommand[2], amount);
+                    break; 
                 default:
                     this.logger.Log(InsuranceEngine.InvalidCommand);
                     break;
@@ -80,7 +99,22 @@ namespace InsuranceApp.Core.Engine
                 case "person":
                     var createdPerson = this.humanFactory.CreateHumanInsurance();
                     this.persons.Add(createdPerson);
-                    this.logger.Log(string.Format("Person {0} successfully created!", createdPerson.FirstName));
+                    this.logger.Log(string.Format("Person {0} with id {1} successfully created!", createdPerson.FirstName, createdPerson.PersonalID));
+                    break;
+                default:
+                    this.logger.Log(InsuranceEngine.InvalidCommand);
+                    break;
+            }
+        }
+
+        private void CreateContract(IPerson owner, string assetType, decimal amount)
+        {
+            switch (assetType.ToLower())
+            {
+                case "property":
+                    var contract = this.contractFactory.CreatePropertyContract(owner,amount);
+
+                    this.logger.Log(string.Format("{0} successfully insured property at {1} for {2}.", owner.FirstName, owner.Address, amount));
                     break;
                 default:
                     this.logger.Log(InsuranceEngine.InvalidCommand);
@@ -96,7 +130,7 @@ namespace InsuranceApp.Core.Engine
                     this.logger.Log("Listing persons:");
                     foreach (var person in this.persons)
                     {
-                        this.logger.Log(string.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName));
+                        this.logger.Log(string.Format("{0} {1} {2}, id - {3}", person.FirstName, person.MiddleName, person.LastName, person.PersonalID));
                     }
                     this.logger.Log("----End of list----");
                     break;

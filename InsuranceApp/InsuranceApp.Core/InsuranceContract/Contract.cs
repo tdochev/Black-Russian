@@ -1,6 +1,7 @@
 ﻿namespace InsuranceApp.InsuranceContract
 {
     using Core.Constants;
+    using Core.Contracts;
     using Core.Exceptions;
     using Core.Finance.Payments;
     using Core.InsuranceContract;
@@ -60,7 +61,7 @@
             risk.SetMaxCoverageAmount(this.premiumPaid);
             this.risksCovered.Add(risk);
         }
-        public Contract(Person owner, IType insuranceObject, decimal amountOfPremium)
+        public Contract(IPerson owner, IType insuranceObject, decimal amountOfPremium)
         {
             if (owner == null)
             {

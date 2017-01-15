@@ -23,10 +23,13 @@ namespace InsuranceApp.Core.Engine.Factories
             "0888888888",
             "0888123456"
         };
-        private readonly string[] personalIDs =
-            {
-             "8010207889"
-        };
+
+        private static int ID = 1;
+
+        private static int getID()
+        {
+            return ID++;
+        }
 
 
         public IPerson CreateHumanInsurance()
@@ -41,9 +44,7 @@ namespace InsuranceApp.Core.Engine.Factories
 
             var randomPhonenumber = this.GetRandomValueFromArray(this.phonenumbers);
 
-            var randomPersonalID = this.GetRandomValueFromArray(this.personalIDs);
-
-            return new HumanInsurance(firstName, middleName, lastName, randomAddresses, randomPhonenumber, randomPersonalID);
+            return new HumanInsurance(firstName, middleName, lastName, randomAddresses, randomPhonenumber, getID().ToString());
         }
 
         private T GetRandomValueFromArray<T>(T[] arr)

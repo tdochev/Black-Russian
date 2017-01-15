@@ -2,6 +2,7 @@
 {
     using Common;
     using Constants;
+    using Contracts;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -11,7 +12,7 @@
     public class PropertyInsurance : IType
     {
         private string propertyAddress;
-        private NonHumanObjectsOwner propertyOwner;
+        private IPerson propertyOwner;
         private const string propertyAddressString = "Property Adredress ";
 
         protected ObjectTypes Type { get; private set; }
@@ -37,7 +38,7 @@
             }
         }
 
-        public PropertyInsurance(string propertyAddress, NonHumanObjectsOwner propertyOwner)
+        public PropertyInsurance(string propertyAddress, IPerson propertyOwner)
         {
             this.PropertyAddress = propertyAddress;
             this.propertyOwner = propertyOwner;
