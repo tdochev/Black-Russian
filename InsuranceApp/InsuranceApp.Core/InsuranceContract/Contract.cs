@@ -1,18 +1,6 @@
-﻿namespace InsuranceApp.Core.InsuranceContract
+﻿namespace InsuranceApp.InsuranceContract
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    class Contracts
-    {
-    }
-}
-<<<<<<< HEAD:InsuranceApp/InsuranceApp/InsuranceContract/Contract.cs
-    namespace InsuranceApp.InsuranceContract
-{
+    using Core.Constants;
     using Core.Exceptions;
     using Core.Finance.Payments;
     using Core.InsuranceContract;
@@ -85,4 +73,3 @@
         }
     }
 }
->>>>>>> origin/master:InsuranceApp/InsuranceApp.Core/InsuranceContract/Contract.cs

@@ -11,10 +11,10 @@
     public abstract class Person : IPerson
     {
         private const string firstNameString = "First Name";
-        private const string middleNameString = "Midle Name";
+        private const string middleNameString = "Middle Name";
         private const string lastNameString = "Last Name";
         private const string personalIDString = "Personal ID";
-        private const string addressString = "Adress";
+        private const string addressString = "Address";
         private const string phoneNumberString = "Phone Number";
         private const string phoneNumberStringErr = "Phone Number is in invalid format ";
 

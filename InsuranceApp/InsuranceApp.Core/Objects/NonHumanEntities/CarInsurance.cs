@@ -1,13 +1,14 @@
 ﻿namespace InsuranceApp.Core.Objects.NonHumanEntities
 {
     using Common;
+    using Constants;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
 
-    public class CarInsurance : UniqueIdentifier, IGenerateUniqueID
+    public class CarInsurance : UniqueIdentifier, IGenerateUniqueID, IType
     {
         private string vehicleRegistration;
         private NonHumanObjectsOwner owner;
@@ -26,6 +27,14 @@
                 Verification.String(value, registraionString);
                 Verification.CarRegistration(value);
                 this.vehicleRegistration = value;
+            }
+        }
+
+        ObjectTypes IType.Type
+        {
+            get
+            {
+                throw new NotImplementedException();
             }
         }
 

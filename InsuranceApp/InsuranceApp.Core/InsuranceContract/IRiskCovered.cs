@@ -11,8 +11,7 @@ namespace InsuranceApp.InsuranceContract
     {
 
         decimal MaxAmout { get; }
-        void SetMaxCoverageAmount(Premium payment); //Method to implement max available amount for coverage - 
-                                                    //as % of premium paid and/or other conditions according to
-                                                    //the risk (age, conditions of use, etc)
+        //Method to implement max available amount for coverage - as % of premium paid and/or other conditions according to the risk (age, conditions of use, etc)
+        void SetMaxCoverageAmount(Premium payment);
     }
 }

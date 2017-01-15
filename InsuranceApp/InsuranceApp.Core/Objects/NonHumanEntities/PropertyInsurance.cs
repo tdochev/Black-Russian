@@ -1,13 +1,14 @@
 ﻿namespace InsuranceApp.Core.Objects.NonHumanEntities
 {
     using Common;
+    using Constants;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
 
-    public class PropertyInsurance
+    public class PropertyInsurance : IType
     {
         private string propertyAddress;
         private NonHumanObjectsOwner propertyOwner;
@@ -25,6 +26,14 @@
             {
                 Verification.String(value, propertyAddressString);
                 this.propertyAddress = value;
+            }
+        }
+
+        ObjectTypes IType.Type
+        {
+            get
+            {
+                throw new NotImplementedException();
             }
         }
 

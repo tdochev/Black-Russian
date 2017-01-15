@@ -1,15 +1,14 @@
-﻿namespace InsuranceApp.Core.Objects.NonHumanEntities
+﻿namespace InsuranceApp.Core.Constants
 {
+    using Objects.NonHumanEntities;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
 
-    public enum ObjectTypes
+    public interface IType
     {
-        Car = 10,
-        Property = 20,
-        Human = 30
+        ObjectTypes Type { get; }
     }
 }

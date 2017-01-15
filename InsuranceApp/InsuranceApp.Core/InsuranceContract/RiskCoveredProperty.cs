@@ -1,4 +1,5 @@
-﻿using InsuranceApp.Core.Objects.NonHumanEntities;
+﻿using InsuranceApp.Core.Finance.Payments;
+using InsuranceApp.Core.Objects.NonHumanEntities;
 using InsuranceApp.Core.Objects.RiskTypes;
 using InsuranceApp.InsuranceContract;
 using System;
@@ -18,7 +19,7 @@ namespace InsuranceApp.Core.InsuranceContract
             }
         }
 
-        public void SetMaxCoverageAmount()
+        public void SetMaxCoverageAmount(Premium payment)
         {
             throw new NotImplementedException();
         }
