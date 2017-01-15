@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InsuranceApp.Core.Objects
 {
-    abstract class Vehicle
+    class Vehicle
     {
         private VehicleType type;
         private Person owner;
