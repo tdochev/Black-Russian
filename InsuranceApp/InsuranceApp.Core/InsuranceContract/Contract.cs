@@ -33,6 +33,8 @@
             }
         }
 
+        public PaymentManager ManagerForPayment { get; set; }
+
         public string ID
         {
             get
@@ -70,6 +72,7 @@
             }
             this.risksCovered = new List<IRiskCovered>();
             this.premiumPaid = new Premium(amountOfPremium);
+            this.ManagerForPayment = new PaymentManager(this.premiumPaid);
         }
     }
 }
