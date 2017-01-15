@@ -40,7 +40,7 @@
             private set
             {
                 Verification.String(value, contacIDString);
-                
+
                 //else if (!ContractsList.contracts.Contains(value))
                 //{
                 //    // TODO: After the Insurance Contracts are ready implement verification.
@@ -50,10 +50,13 @@
             }
         }
 
-        public ContractPayment(string contractOwnerIban, string contractId, PaymentOwner owner)
+        public decimal Amount { get; internal set; }
+
+        public ContractPayment(decimal amount, string contractOwnerIban, string contractId, PaymentOwner owner)
         {
             this.Iban = contractOwnerIban;
             this.ContractID = contractId;
+            this.Amount = amount;
         }
     }
 }
