@@ -58,7 +58,7 @@
     <Compile Include="Finance\Payments\PaymentManager.cs" />
     <Compile Include="Finance\Payments\PaymentOwner.cs" />
     <Compile Include="Finance\Payments\Premium.cs" />
-    <Compile Include="InsuranceContract\Contracts.cs" />
+    <Compile Include="InsuranceContract\Contract.cs" />
     <Compile Include="InsuranceContract\IID.cs" />
     <Compile Include="InsuranceContract\IRiskCovered.cs" />
     <Compile Include="InsuranceContract\RiskCoveredCar.cs" />
