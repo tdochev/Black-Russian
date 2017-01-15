@@ -9,7 +9,8 @@ namespace InsuranceApp.ConsoleClient
         public static void Main()
         {
             ILogger logger = ConsoleLogger.Instance();
-            InsuranceEngine.GetInstance(logger).StartEngine();
+            ICommandReader reader = ConsoleCommandReader.Instance();
+            InsuranceEngine.GetInstance(logger, reader).StartEngine();
         }
     }
 }

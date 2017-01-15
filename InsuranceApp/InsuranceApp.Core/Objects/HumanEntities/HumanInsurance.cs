@@ -7,8 +7,9 @@
     using System.Text;
     using System.Threading.Tasks;
     using NonHumanEntities;
+    using Contracts;
 
-    public class HumanInsurance : Person, IType
+    public class HumanInsurance : Person, IPerson,IType
     {
         public HumanInsurance(string firstName, string middleName, string lastName, string address, string phoneNumber, string personalID) : base(firstName, middleName, lastName, address, phoneNumber, personalID)
         {

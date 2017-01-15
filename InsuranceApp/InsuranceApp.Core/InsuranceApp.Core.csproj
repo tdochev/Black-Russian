@@ -43,6 +43,7 @@
     <Compile Include="Common\Verification.cs" />
     <Compile Include="Constants\BankConstants.cs" />
     <Compile Include="Constants\IType.cs" />
+    <Compile Include="Engine\Contracts\ICommandReader.cs" />
     <Compile Include="Contracts\IContractPayment.cs" />
     <Compile Include="Contracts\IPaymentOwner.cs" />
     <Compile Include="Contracts\IPerson.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Engine\Contracts\ILogger.cs" />
     <Compile Include="Engine\Factories\HumanInsuranceFactory.cs" />
     <Compile Include="Engine\InsuranceEngine.cs" />
+    <Compile Include="Engine\Models\ConsoleCommandReader.cs" />
     <Compile Include="Engine\Models\ConsoleLogger.cs" />
     <Compile Include="Exceptions\InvalidContractValidationException.cs" />
     <Compile Include="Exceptions\InvalidIbanValidationException.cs" />
