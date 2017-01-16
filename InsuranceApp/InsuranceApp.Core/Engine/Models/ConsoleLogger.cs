@@ -21,5 +21,12 @@ namespace InsuranceApp.Core.Engine.Models
 		{
 			return instance;
 		}
-	}
+
+        public void LogError(object message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            this.Log(message);
+            Console.ResetColor();
+        }
+    }
 }

@@ -82,12 +82,12 @@ namespace InsuranceApp.Core.Engine
                     }
                     catch (Exception)
                     {
-                        this.logger.Log("Invalid contract amount!");
+                        this.logger.LogError("Invalid contract amount!");
                     }
                     this.CreateContract(currentUser, splittedCommand[2], amount);
                     break; 
                 default:
-                    this.logger.Log(InsuranceEngine.InvalidCommand);
+                    this.logger.LogError(InsuranceEngine.InvalidCommand);
                     break;
             }
         }
@@ -102,7 +102,7 @@ namespace InsuranceApp.Core.Engine
                     this.logger.Log(string.Format("Person {0} with id {1} successfully created!", createdPerson.FirstName, createdPerson.PersonalID));
                     break;
                 default:
-                    this.logger.Log(InsuranceEngine.InvalidCommand);
+                    this.logger.LogError(InsuranceEngine.InvalidCommand);
                     break;
             }
         }
