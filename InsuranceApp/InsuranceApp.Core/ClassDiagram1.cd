@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InsuranceApp.Core.Common.Verification" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAQAAEAAAAAACAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Common\Verification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Constants.BankConstants" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Constants\BankConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Engine.Factories.ContractFactory" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Factories\ContractFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Engine.Factories.HumanInsuranceFactory" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAgACAAAAAAAAAAEAQAAAAAAgAAAAAAIA=</HashCode>
+      <FileName>Engine\Factories\HumanInsuranceFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Engine.InsuranceEngine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAIAAAAAAAAACIAAIgAAABAEAAiAAAwAAAAAQAAA=</HashCode>
+      <FileName>Engine\InsuranceEngine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InsuranceApp.Core.Engine.Models.ConsoleCommandReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAQAAAA=</HashCode>
+      <FileName>Engine\Models\ConsoleCommandReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InsuranceApp.Core.Engine.Models.ConsoleLogger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAhAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Models\ConsoleLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InsuranceApp.Core.Exceptions.InvalidContractValidationException" Collapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidContractValidationException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Exceptions.InvalidIbanValidationException" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidIbanValidationException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Finance.Payments.ContractPayment" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQAAAAAAgAAAAAAAACCAAgAgAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Finance\Payments\ContractPayment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InsuranceApp.Core.Finance.Payments.PaymentEventArgs" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAA=</HashCode>
+      <FileName>Finance\Payments\PaymentEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Finance.Payments.PaymentManager" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAggAIAAAAEAAAAAABgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Finance\Payments\PaymentManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Finance.Payments.PaymentOwner" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Finance\Payments\PaymentOwner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InsuranceApp.Core.Finance.Payments.Premium" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAIAAAAACAAAQCAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Finance\Payments\Premium.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.InsuranceContract.Contract" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAACABAAAgAAAAAAAAAAAAAAAAAAoAAAAAAAAAjA=</HashCode>
+      <FileName>InsuranceContract\Contract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InsuranceApp.Core.InsuranceContract.RiskCoveredCar" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACIEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>InsuranceContract\RiskCoveredCar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InsuranceApp.Core.InsuranceContract.RiskCoveredHuman" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>InsuranceContract\RiskCoveredHuman.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InsuranceApp.Core.InsuranceContract.RiskCoveredProperty" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAEAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>InsuranceContract\RiskCoveredProperty.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InsuranceApp.Core.InsuranceContract.Static.ContractsList" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InsuranceContract\Static\ContractsList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Objects.HumanEntities.HumanInsurance" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Objects\HumanEntities\HumanInsurance.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InsuranceApp.Core.Objects.NonHumanEntities.CarInsurance" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAAAAAAAAAAABAABQAAQAAAAAEAAA=</HashCode>
+      <FileName>Objects\NonHumanEntities\CarInsurance.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InsuranceApp.Core.Objects.NonHumanEntities.NonHumanObjectsOwner" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\NonHumanEntities\NonHumanObjectsOwner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Objects.NonHumanEntities.PropertyInsurance" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAQIQAAAAAAAAAAAAAAAAQAAQAAAAAAAAA=</HashCode>
+      <FileName>Objects\NonHumanEntities\PropertyInsurance.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InsuranceApp.Core.Objects.NonHumanEntities.UniqueIdentifier" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAA=</HashCode>
+      <FileName>Objects\NonHumanEntities\UniqueIdentifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InsuranceApp.Core.Objects.Person" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQCEAgAADAAAQAAAAUQAAAEEYAAAACAABACAAAAAg=</HashCode>
+      <FileName>Objects\Person.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="InsuranceApp.Core.Constants.IType" Collapsed="true">
+    <Position X="14.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InsuranceApp.Core.Contracts.IContractPayment" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IContractPayment.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InsuranceApp.Core.Contracts.IPaymentOwner" Collapsed="true">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IPaymentOwner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InsuranceApp.Core.Contracts.IPerson" Collapsed="true">
+    <Position X="11.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAUQAAAAAAAAAACAAAAAAAAAAg=</HashCode>
+      <FileName>Contracts\IPerson.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InsuranceApp.Core.Engine.Contracts.ICommandReader" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Engine\Contracts\ICommandReader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InsuranceApp.Core.Engine.Contracts.IEngine" Collapsed="true">
+    <Position X="11.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Contracts\IEngine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InsuranceApp.Core.Engine.Contracts.ILogger" Collapsed="true">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Contracts\ILogger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InsuranceApp.InsuranceContract.IID" Collapsed="true">
+    <Position X="14.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InsuranceContract\IID.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InsuranceApp.InsuranceContract.IRiskCovered" Collapsed="true">
+    <Position X="13" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>InsuranceContract\IRiskCovered.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InsuranceApp.Core.Objects.NonHumanEntities.IGenerateUniqueID" Collapsed="true">
+    <Position X="13" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\NonHumanEntities\IGenerateUniqueID.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="InsuranceApp.Core.Objects.NonHumanEntities.ObjectTypes" Collapsed="true">
+    <Position X="11.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAQQAAAA=</HashCode>
+      <FileName>Objects\NonHumanEntities\ObjectTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="InsuranceApp.Core.Objects.RiskTypes.CarRiskTypes" Collapsed="true">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAIAAgAAAAAAAAA=</HashCode>
+      <FileName>Objects\RiskTypes\CarRiskTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="InsuranceApp.Core.Objects.RiskTypes.HumanRiskTypes" Collapsed="true">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAACAAAAAAgAgBAAAAAAAA=</HashCode>
+      <FileName>Objects\RiskTypes\HumanRiskTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="InsuranceApp.Core.Objects.RiskTypes.PropertyRiskTypes" Collapsed="true">
+    <Position X="13" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAABAAAAAAAAAAAAAEAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Objects\RiskTypes\PropertyRiskTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
