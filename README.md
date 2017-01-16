@@ -4,6 +4,7 @@ Telerik-CSharp-TeamWork
 ![](http://www.kahlua.com/globalassets/classic-cocktails/black-russian/kahlua-black-russian-highlighted.png/OpenGraphImage600x315)
 
 # Team
+
 Name | TelerikAcademy user | GitHub user
 -----|-------|-------
 Невен Минев | nefto | nefto
@@ -12,7 +13,7 @@ Name | TelerikAcademy user | GitHub user
 Ива Кондарева | Iva_Kondareva | ivakondareva
 Дейвид Любомиров | davidlubomirov | davidlubomirov
 Марин Василев | marvas | marvasgit
-
+<br />
 # Task Separation
 
 Task | Owner | Status
@@ -25,5 +26,6 @@ Update Interfaces | Tsvetomir | In Development
 Exceptions | Georgy, Marin | In Development
 Attributes | Iva | In Development
 Validation | Marin | In Development
+<br />
 
 ![alt text](https://raw.githubusercontent.com/davidlubomirov/Black-Russian/master/InsuranceApp/ClassDiagram1.png "Class diagram")<br />
