@@ -15,3 +15,5 @@ Update Interfaces | Tsvetomir | In Development
 Exceptions | Georgy, Marin | In Development
 Attributes | Iva | In Development
 Validation | Marin | In Development
+
+![alt text](https://raw.githubusercontent.com/davidlubomirov/Black-Russian/master/InsuranceApp/ClassDiagram1.png "Class diagram")<br />
