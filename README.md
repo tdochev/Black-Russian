@@ -3,6 +3,16 @@ Telerik-CSharp-TeamWork
 
 ![](http://www.kahlua.com/globalassets/classic-cocktails/black-russian/kahlua-black-russian-highlighted.png/OpenGraphImage600x315)
 
+# Team
+Name | TelerikAcademy user | GitHub user
+-----|-------|-------
+Невен Минев | nefto | nefto
+Цветомир Дочев | Tdochev | tdochev
+Георги Марков | markovood | markovood
+Ива Кондарева | Iva_Kondareva | ivakondareva
+Дейвид Любомиров | davidlubomirov | davidlubomirov
+Марин Василев | marvas | marvasgit
+
 # Task Separation
 
 Task | Owner | Status
